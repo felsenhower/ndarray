@@ -505,6 +505,7 @@ offset_impl! {
     [A B C D E][ a b c d e],
     [A B C D E F][ a b c d e f],
     [A B C D E F G][ a b c d e f g],
+    [A B C D E F G H][ a b c d e f g h],
 }
 
 macro_rules! zipt_impl {
@@ -565,6 +566,7 @@ zipt_impl! {
     [A B C D E][ a b c d e],
     [A B C D E F][ a b c d e f],
     [A B C D E F G][ a b c d e f g],
+    [A B C D E F G H][ a b c d e f g h],
 }
 
 macro_rules! map_impl {
@@ -917,7 +919,8 @@ map_impl! {
     [true P1 P2 P3 P4],
     [true P1 P2 P3 P4 P5],
     [true P1 P2 P3 P4 P5 P6],
-    [false P1 P2 P3 P4 P5 P6 P7],
+    [true P1 P2 P3 P4 P5 P6 P7],
+    [false P1 P2 P3 P4 P5 P6 P7 P8],
 }
 
 /// Value controlling the execution of `.fold_while` on `Zip`.
